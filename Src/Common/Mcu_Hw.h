@@ -39,7 +39,7 @@ typedef union
 {   
     uint32  R;                  /*To access this register once time to write hex*/
     INTCTRL_BF B;               /*to access INTCTRL_Tag time by bitfield*/
-}INTCTRL_Tag;
+}INTCTRL;
 /*****************************************************************************************
  * GLOBAL COSTANT MACROS
 ******************************************************************************************/
