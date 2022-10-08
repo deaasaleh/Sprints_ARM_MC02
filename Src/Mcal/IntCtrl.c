@@ -54,7 +54,8 @@ void IntCtrl_Init(void)
 {
     /*ToDo Config Grouping\SubGrouping System in APINT register in SCB*/
     APINT = 0xFA05|0x00001234;
-    INTCTRL.R.VECPEND = 0x5
+    INTCTRL.R.VECPEND = 0x5;
+
     /*ToDo Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx REGISTERs*/
     
     /*ToDO Enable\Disable based on user configuration in NVIC_ENx and SCB_SYS REGISTERs*/

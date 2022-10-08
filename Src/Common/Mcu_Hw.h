@@ -39,14 +39,13 @@ typedef union
 {   
     uint32  R;                  /*To access this register once time to write hex*/
     INTCTRL_BF B;               /*to access INTCTRL_Tag time by bitfield*/
-}INTCTRL;
+}INTCTRL_Tag;
 /*****************************************************************************************
  * GLOBAL COSTANT MACROS
 ******************************************************************************************/
 #define CORTEXM4_PERI_BASE_ADDRESS                      0XE000E000
 #define APINT                                           *((volatile uint32*)(CORTEXM4_PERI_BASE_ADDRESS+0xD0C))
 #define INTCTRL                                         *((volatile INTCTRL_Tag*)(CORTEXM4_PERI_BASE_ADDRESS+0xD04))
-
 
 /*****************************************************************************************
  * GLOBAL DATA PROTOTYPES 
